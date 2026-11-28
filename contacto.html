@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | TONIDEV71</title>
+
+    <meta name="description" content="Contacta con TONIDEV71 para hablar sobre desarrollo web y proyectos.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+
+    <header class="cabecera">
+
+        <a href="index.html" class="logo">
+            <img src="img/LOGO-TONIDEV71.png" alt="Logo TONIDEV71">
+        </a>
+
+        <a href="index.html" class="dominio">TONIDEV71</a>
+
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="menu-principal" id="menu-principal">
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="certificados.html">Certificados y Diplomas</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO CONTACTO -->
+
+    <main class="pagina-contacto">
+
+        <section class="titulo-seccion">
+
+            <p class="etiqueta">ESTOY A TU DISPOSICIÓN</p>
+
+            <h1>CONTACTA <span>CONMIGO</span></h1>
+
+            <div class="linea-azul"></div>
+
+            <p class="subtitulo">
+                ¿Tienes una propuesta o quieres hablar de un proyecto?
+                Escríbeme.
+            </p>
+
+        </section>
+
+
+        <section class="contenido-contacto">
+
+            <!-- INFORMACIÓN -->
+
+            <div class="informacion-contacto">
+
+                <h2>HABLEMOS</h2>
+
+                <p>
+                    Estoy abierto a nuevas oportunidades, colaboraciones
+                    y proyectos relacionados con el desarrollo web.
+                </p>
+
+                <div class="dato-contacto">
+
+                    <span class="icono-contacto">@</span>
+
+                    <div>
+                        <h3>Correo electrónico</h3>
+                        <a href="mailto:toni_el@hotmail.es">
+                            toni_el@hotmail.es
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="dato-contacto">
+
+                    <span class="icono-contacto">WEB</span>
+
+                    <div>
+                        <h3>Portfolio</h3>
+                        <a href="https://www.tonidev71.com" target="_blank" rel="noopener noreferrer">
+                            www.tonidev71.com
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="dato-contacto">
+
+                    <span class="icono-contacto">DEV</span>
+
+                    <div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/tonidev71" target="_blank" rel="noopener noreferrer">
+                            github.com/tonidev71
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="disponibilidad">
+
+                    <span class="punto-disponible"></span>
+
+                    DISPONIBLE PARA NUEVAS OPORTUNIDADES
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULARIO -->
+
+            <div class="formulario-contacto">
+
+                <h2>ENVÍAME UN MENSAJE</h2>
+
+                <form id="formulario-contacto">
+
+                    <div class="campo">
+
+                        <label for="nombre">Nombre</label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="email">Correo electrónico</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="tu@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="asunto">Asunto</label>
+
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            placeholder="Motivo del mensaje"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="mensaje">Mensaje</label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Escribe aquí tu mensaje..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="boton-contacto">
+                        ENVIAR MENSAJE →
+                    </button>
+
+                    <p id="respuesta-formulario" role="status"></p>
+
+                    <p class="aviso-formulario">
+                        Formulario de demostración. El envío de mensajes
+                        todavía no está configurado.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="pie-pagina">
+
+        <div class="redes-sociales"></div>
+
+        <p>
+            © 2026 TONIDEV71 |
+            <a href="https://www.tonidev71.com">www.tonidev71.com</a>
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="contacto.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* ========================================
+   CERTIFICADOS - TONIDEV71
+======================================== */
+
+.pagina-certificados {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+/* TÍTULO */
+
+.pagina-certificados .titulo-seccion {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pagina-certificados .etiqueta {
+    color: #00b7ff;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.pagina-certificados h1 {
+    color: white;
+    font-size: clamp(25px, 5vw, 48px);
+    font-weight: 900;
+}
+
+.pagina-certificados h1 span {
+    color: #00b7ff;
+}
+
+.pagina-certificados .linea-azul {
+    width: 90px;
+    height: 4px;
+    background: #00b7ff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00b7ff;
+}
+
+.pagina-certificados .subtitulo {
+    color: #b5c4d6;
+    margin-top: 20px;
+}
+
+/* GALERÍA */
+
+.galeria-certificados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* TARJETAS */
+
+.tarjeta-certificado {
+    background: #0b1224;
+    border: 1px solid rgba(0, 183, 255, 0.25);
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tarjeta-certificado:hover {
+    border-color: #00b7ff;
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* IMÁGENES */
+
+.imagen-certificado {
+    width: 100%;
+    height: 230px;
+    background: #050816;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: zoom-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-certificado img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* INFORMACIÓN */
+
+.tarjeta-certificado h2 {
+    color: #00b7ff;
+    font-size: 17px;
+    margin-top: 18px;
+}
+
+.tarjeta-certificado p {
+    color: #b5c4d6;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.instruccion {
+    display: block;
+    color: #71849b;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+/* IMAGEN AMPLIADA */
+
+.imagen-certificado.ampliada {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.96);
+    border-radius: 0;
+    padding: 35px;
+    cursor: zoom-out;
+}
+
+.imagen-certificado.ampliada img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1);
+}
+
+/* MENSAJE FINAL */
+
+.mensaje-certificados {
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: center;
+    background: #0b1224;
+    border: 1px solid rgba(0, 183, 255, 0.2);
+    border-radius: 12px;
+}
+
+.mensaje-certificados h2 {
+    color: white;
+    font-size: clamp(20px, 4vw, 30px);
+    margin-bottom: 20px;
+}
+
+.mensaje-certificados h2 span {
+    color: #00b7ff;
+}
+
+.mensaje-certificados p {
+    color: #b5c4d6;
+    line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .galeria-certificados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+    .pagina-certificados {
+        width: 92%;
+        padding: 45px 0;
+    }
+
+    .galeria-certificados {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-certificado {
+        height: 250px;
+    }
+
+    .imagen-certificado.ampliada {
+        padding: 15px;
+    }
+}
